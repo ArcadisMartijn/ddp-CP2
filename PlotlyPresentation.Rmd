@@ -1,0 +1,21 @@
+---
+title: "PlotlyPresentation"
+author: "M. Adriaanse"
+date: "15 oktober 2018"
+output: ioslides_presentation
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+cars <- mtcars
+```
+
+## Slide with Plotly plot
+
+```{r pressure}
+plot_ly(cars, x = cars$wt, type = "histogram")
+```
+
